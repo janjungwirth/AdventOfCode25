@@ -1,7 +1,7 @@
 package com.jan.advent25;
 
 
-import com.jan.advent25.day1.Dial;
+import com.jan.advent25.day1.Dial2;
 import com.jan.advent25.day1.InputLoader;
 
 import java.util.List;
@@ -13,11 +13,11 @@ public class Main {
 
         for (String line : lines) {
             if(line.startsWith("R"))
-                Dial.getInstance().moveRight(Integer.parseInt(line.substring(1)));
+                Dial2.getInstance().moveRight(Integer.parseInt(line.substring(1)));
             if(line.startsWith("L"))
-                Dial.getInstance().moveLeft(Integer.parseInt(line.substring(1)));
+                Dial2.getInstance().moveLeft(Integer.parseInt(line.substring(1)));
         }
-        System.out.println(Dial.getZEROS());
+        System.out.println(Dial2.getZEROS());
 
     }
 }
