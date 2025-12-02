@@ -1,4 +1,4 @@
-package com.jan.advent25.day1;
+package com.jan.advent25;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
