@@ -23,6 +23,8 @@ public class RangeChecker {
     }
 
     public static boolean isValidExtended(long input){
+        if(input < 10) return true;
+
         String check = String.valueOf(input);
         int inputLength = check.length();
 

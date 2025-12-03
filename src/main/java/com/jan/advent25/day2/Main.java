@@ -16,15 +16,6 @@ public class Main {
         loader.getRanges().forEach(checker::checkRange);
         long result = 0;
 
-        checker.getCapturedInvalidIDs().remove(1L);
-        checker.getCapturedInvalidIDs().remove(2L);
-        checker.getCapturedInvalidIDs().remove(3L);
-        checker.getCapturedInvalidIDs().remove(4L);
-        checker.getCapturedInvalidIDs().remove(5L);
-        checker.getCapturedInvalidIDs().remove(6L);
-        checker.getCapturedInvalidIDs().remove(7L);
-        checker.getCapturedInvalidIDs().remove(8L);
-        checker.getCapturedInvalidIDs().remove(9L);
 
         for (Long capturedInvalidID : checker.getCapturedInvalidIDs()) {
             result += capturedInvalidID;
